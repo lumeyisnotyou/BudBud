@@ -2,7 +2,7 @@
 //  BudBudUITestsLaunchTests.swift
 //  BudBudUITests
 //
-//  Created by Miles Axelberd on 4/12/23.
+//  Created by lumey on 4/12/23.
 //
 
 import XCTest

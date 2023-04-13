@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A44266D29E7AA7600F414CE /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3A44266C29E7AA7600F414CE /* SDWebImage */; };
 		3A8A263029E77A9A00BDD648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8A262F29E77A9A00BDD648 /* AppDelegate.swift */; };
 		3A8A263229E77A9A00BDD648 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8A263129E77A9A00BDD648 /* SceneDelegate.swift */; };
 		3A8A263429E77A9A00BDD648 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8A263329E77A9A00BDD648 /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A44266D29E7AA7600F414CE /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = BudBud;
+			packageProductDependencies = (
+				3A44266C29E7AA7600F414CE /* SDWebImage */,
+			);
 			productName = BudBud;
 			productReference = 3A8A262C29E77A9A00BDD648 /* BudBud.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 3A8A262329E77A9A00BDD648;
+			packageReferences = (
+				3A44266B29E7AA7600F414CE /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 3A8A262D29E77A9A00BDD648 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -440,6 +448,8 @@
 				DEVELOPMENT_TEAM = 9WT469DR6F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BudBud/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "BudBud requires Bluetooth in order to communicate with your Fast Pair devices";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -468,6 +478,8 @@
 				DEVELOPMENT_TEAM = 9WT469DR6F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BudBud/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "BudBud requires Bluetooth in order to communicate with your Fast Pair devices";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -602,6 +614,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A44266B29E7AA7600F414CE /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A44266C29E7AA7600F414CE /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A44266B29E7AA7600F414CE /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3A8A262429E77A9A00BDD648 /* Project object */;
 }
